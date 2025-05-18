@@ -55,7 +55,7 @@
                         {{-- Delete with wire:confirm.prompt --}}
                         {{-- <flux:button wire:confirm.prompt="Are you sure?\n\nType Delete to confirm|Delete" variant="danger" wire:click='DeleteUser' x-on:click="$wire.deleteUserId={{ $user->id }}" size="sm">Delete</flux:button> --}}
 
-                        {{-- Delete with modal Confirmation --}}
+                        {{-- Delete with mpodal Confirmation --}}
                         <flux:modal.trigger name="delete-user-modal">
                             <flux:button variant="danger" x-on:click="$wire.deleteUserId={{ $user->id }}" size="sm">Delete</flux:button>
                         </flux:modal.trigger>

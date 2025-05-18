@@ -33,7 +33,7 @@
             <flux:dropdown position="bottom" align="start">
                 <flux:profile
                     :name="auth()->user()->name"
-                    :initials="auth()->user()->initials()"
+                    avatar="{{ auth()->user()->image_url }}"
                     icon-trailing="chevrons-up-down"
                 />
 
@@ -83,7 +83,7 @@
 
             <flux:dropdown position="top" align="end">
                 <flux:profile
-                    :initials="auth()->user()->initials()"
+                    avatar="{{ auth()->user()->image_url }}"
                     icon-trailing="chevron-down"
                 />
 
